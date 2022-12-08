@@ -5,6 +5,7 @@
   //  官网没有对其他解析器进行说明，但是有提示，使用其他解析器的时候，注意确认它是不是和 ESLint 兼容。
   //  至于咋确认。。你指定一下这个解析器，看看 eslint 会不会对你想检查的代码正常报错，就行了。
   // 以下解析器与 ESLint 兼容：
+
   //  1、Esprima
   //  2、Babel-ESLint：一个对Babel解析器的包装，使其能够与 ESLint 兼容（如果你想使用一些 先进的语法，比如es6789...）。
   //  3、@typescript-eslint/parser：将 TypeScript 转换成与 estree 兼容的形式，以便在ESLint中使用（如果你想使用typescript）。
