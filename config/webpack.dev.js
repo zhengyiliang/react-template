@@ -24,10 +24,15 @@ module.exports = merge(baseConfig, {
   plugins: [
     new ReactRefreshWebpackPlugin(), // jsx/tsx 热更新插件
     new EslintWebpackPlugin({
-      context: path.resolve(__dirname, '../src'),
-      exclude: 'node_modules',
-      cache: true,
-      cacheLocation: path.resolve(__dirname, '../node_modules/.cache/.eslintcache'),
+      extensions: ['js', 'jsx', 'ts', 'tsx'],
+      emitError: true,
+      emitWarning: true,
+      // context: path.resolve(__dirname, '../src'),
+      // exclude: 'node_modules',
+      // cache: true,
+      // failOnError: true, // 默认 false 如果设置为true的话，那么当触发任何错误的时候，将导致构建失败。
+      // failOnWarning: true, // 如果设置为true的话，那么有任何警告的时候，将导致构建失败。
+      // cacheLocation: path.resolve(__dirname, '../node_modules/.cache/.eslintcache'),
     }),
   ],
 });

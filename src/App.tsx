@@ -3,7 +3,7 @@ import './App.less';
 
 function App() {
   // console.log(process.env)
-  // const arr = [1, 2, 3];
+  // var arr = [1, 2, 3];
 
   // const b = [...arr];
 
