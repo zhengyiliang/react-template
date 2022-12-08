@@ -1,5 +1,5 @@
-import React from 'react'
-import './App.less'
+import React from 'react';
+import './App.less';
 
 function App() {
   // console.log(process.env)
