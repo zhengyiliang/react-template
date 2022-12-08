@@ -84,3 +84,6 @@
 
 - 当您在工作空间中有一个定义项目上下文的jsconfig.json文件时，JavaScript体验会得到改进。 因此，当您在新工作空间中打开JavaScript文件时，我们提供了一个创建jsconfig.json文件的提示。
 
+## pretty-quick
+
+`pretty-quick` 会只格式化 `git add .` 暂存之后的文件

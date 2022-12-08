@@ -16,7 +16,7 @@
   //  解析器会被传入parserOptions，
   //  但是不一定会使用它们来决定功能特性的开关。
   "parserOptions": {
-    // 默认是 script。模块化的代码要写：module（当前最常见做法，如果你的代码是 ECMAScript 模块）
+    // 默认是 script。 模块化的代码要写：module（当前最常见做法，如果你的代码是 ECMAScript 模块）
     "sourceType": "module",
     //emcaVersion用来指定你想要使用的 ECMAScript 版本
     //注意，使用对于 ES6 语法，使用"ecmaVersion": 6时，不自动启用es6全局变量
