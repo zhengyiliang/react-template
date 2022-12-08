@@ -15,12 +15,6 @@
   "keywords": [],
   "author": "zhengyiliang",
   "license": "ISC",
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/plugin-proposal-decorators": "^7.20.5",

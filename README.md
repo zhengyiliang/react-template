@@ -56,7 +56,7 @@
 
 ## Prettier
 
-专注于检查并自动更正代码风格，美化代码
+专注于检查并自动更正代码风格，美化代码 (代码格式化-配合vscode `Prettier - Code formatter` 插件使用)
 
 ## Eslint
 
