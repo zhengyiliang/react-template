@@ -3,5 +3,8 @@
   // 为javascript语言指定格式化工具为prettier
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true // 保存时是否自动 stylelint 修复
   }
 }

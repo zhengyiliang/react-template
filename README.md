@@ -37,3 +37,9 @@
       // cacheLocation: path.resolve(__dirname, '../node_modules/.cache/.eslintcache'),
     }),
 ```
+
+## EditorConfig: 专注于统一编辑器编码风格配置
+
+## Prettier: 专注于检查并自动更正代码风格，美化代码
+
+## Eslint: 专注于 JavaScript 代码质量检查, 编码风格约束等
