@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.less';
+import './App.less'
 
 function App() {
   // console.log(process.env)
-  // var arr = [1, 2, 3];
+  // let arr = [1, 2, 3];
 
   // const b = [...arr];
 

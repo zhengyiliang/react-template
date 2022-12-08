@@ -22,6 +22,18 @@
 
 - 打开vscode的 `settings-> default formatter` 勾选咱们的 `prettier` 工作区和用户区都要选择哦。
 
+```json
+  // vscode 保存格式化配置
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 为javascript语言指定格式化工具为prettier
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true // 保存时是否自动 stylelint 修复
+  }
+```
+
 ## eslint 在控制台报错
 
 ```javascript
@@ -38,8 +50,19 @@
     }),
 ```
 
-## EditorConfig: 专注于统一编辑器编码风格配置
+## EditorConfig
 
-## Prettier: 专注于检查并自动更正代码风格，美化代码
+专注于统一编辑器编码风格配置
 
-## Eslint: 专注于 JavaScript 代码质量检查, 编码风格约束等
+## Prettier
+
+专注于检查并自动更正代码风格，美化代码
+
+## Eslint
+
+专注于 JavaScript 代码质量检查, 编码风格约束等
+
+## husky
+
+
+
