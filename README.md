@@ -1,5 +1,7 @@
 ## 代码提交
 
+`.commitlintrc.js`
+
 - feat: 新功能
 - fix: 修复 Bug
 - docs: 文档修改
