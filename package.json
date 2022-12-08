@@ -10,7 +10,7 @@
     "prepare": "husky install",
     "eslint": "eslint src/  --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
     "stylelint": "stylelint \"src/**/*.less\"",
-    "pre-commit": "pretty-quick --staged && npm run eslint && npm run stylelint"
+    "pre-commit": "pretty-quick --staged"
   },
   "keywords": [],
   "author": "zhengyiliang",
