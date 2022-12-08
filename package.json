@@ -10,11 +10,17 @@
     "prepare": "husky install",
     "eslint": "eslint src/  --fix --cache --quiet --ext .js,.jsx,.ts,.tsx",
     "stylelint": "stylelint \"src/**/*.less\"",
-    "pre-commit": "npm run eslint && npm run stylelint"
+    "pre-commit": "pretty-quick --staged && npm run eslint && npm run stylelint"
   },
   "keywords": [],
   "author": "zhengyiliang",
   "license": "ISC",
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/plugin-proposal-decorators": "^7.20.5",
