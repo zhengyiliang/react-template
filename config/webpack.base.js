@@ -31,7 +31,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.(js|jsx|ts|tsx)$/,
+        test: /\.(js|jsx|ts|tsx)$/,
         include: [path.resolve(__dirname, '../src')], // 只对项目src文件的ts,tsx进行loader解析
         use: 'babel-loader',
       },
@@ -40,12 +40,12 @@ module.exports = {
       //   use: [styleLoader, 'css-loader', 'postcss-loader', 'less-loader']
       // },
       {
-        test: /.css$/,
+        test: /\.css$/,
         use: [styleLoader, 'css-loader', 'postcss-loader'],
-        include: [path.resolve(__dirname, '../src')], // 只对项目src文件的ts,tsx进行loader解析
+        // include: [path.resolve(__dirname, '../src')], // 只对项目src文件的ts,tsx进行loader解析
       },
       {
-        test: /.less$/, // 精准使用less-loader，避免用less-loader去解析css （ts和tsx也是如此，ts里面是不能写jsx语法的，所以可以尽可能避免使用 @babel/preset-react对 .ts 文件语法做处理。）
+        test: /\.less$/, // 精准使用less-loader，避免用less-loader去解析css （ts和tsx也是如此，ts里面是不能写jsx语法的，所以可以尽可能避免使用 @babel/preset-react对 .ts 文件语法做处理。）
         use: [styleLoader, 'css-loader', 'postcss-loader', 'less-loader'],
         include: [path.resolve(__dirname, '../src')], // 只对项目src文件的ts,tsx进行loader解析
       },

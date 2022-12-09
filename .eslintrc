@@ -57,7 +57,8 @@
   "rules": {
     "semi": 2, // 行末分号，根据编码习惯选择添加，这里配置的加分号
     "no-console": 0, // 禁用 console
-    "comma-dangle": [2, "never"], //对象字面量项尾不能有逗号(always-multiline是有逗号)
+    // "comma-dangle": [2, "never"], //对象字面量项尾不能有逗号(always-multiline是有逗号)
+    "comma-dangle": 0, //对象字面量项尾不能有逗号(always-multiline是有逗号)
     "max-len": 0, // 强制一行的最大长度，可以是[1, 200]限制长度
     "max-lines": 0, // 强制最大行数
     "max-params": 0, // 强制 function 定义中最多允许的参数数量，可以用[1, 7]限制数量
@@ -109,7 +110,7 @@
         "children": true
       }
     ], //在JSX属性和表达式中加强或禁止大括号内的空格。
-    "react/jsx-indent-props": [2, 4], //验证JSX中的props缩进
+    "react/jsx-indent-props": [2, 2], //验证JSX中的props缩进
     "react/jsx-key": 2, //在数组或迭代器中验证JSX具有key属性
     "react/jsx-max-props-per-line": [
       1,

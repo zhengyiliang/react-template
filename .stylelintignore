@@ -1,3 +1,4 @@
 *.tsx
 *.ts
 *.md
+node_modules
