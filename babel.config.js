@@ -26,7 +26,7 @@ const presets = [
     },
   ],
   '@babel/preset-react',
-  // "@babel/preset-typescript"
+  '@babel/preset-typescript', // 否则 ts 关键字报错
 ];
 
 const plugins = [
