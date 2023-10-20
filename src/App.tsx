@@ -1,18 +1,10 @@
-import React from 'react';
-import { Button } from 'antd';
 import '@/App.less';
+import { Button } from 'antd';
 
 function App() {
-  // console.log(process.env)
-  // let arr = [1, 2, 3];
-
-  // const b = [...arr];
-
-  // const c = b ?? 'a';
-
   return (
     <h2>
-      react<Button type="primary">按钮</Button>
+      12312 react<Button type="primary">按钮</Button>
     </h2>
   );
 }

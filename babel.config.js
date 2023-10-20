@@ -25,7 +25,12 @@ const presets = [
       corejs: 3, // 配置使用core-js使用的版本
     },
   ],
-  '@babel/preset-react',
+  [
+    '@babel/preset-react',
+    {
+      runtime: 'automatic', // 不引入React也能使用
+    },
+  ],
   '@babel/preset-typescript', // 否则 ts 关键字报错
 ];
 

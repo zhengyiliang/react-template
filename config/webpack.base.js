@@ -50,7 +50,7 @@ module.exports = {
         include: [path.resolve(__dirname, '../src')], // 只对项目src文件的ts,tsx进行loader解析
       },
       {
-        test: /.(png|jpg|jpeg|gif|svg)$/, // 匹配图片文件
+        test: /.(png|jpg|jpeg|gif)$/, // 匹配图片文件
         type: 'asset', // type选择asset
         include: [path.resolve(__dirname, '../src')], // 只对项目src文件的ts,tsx进行loader解析
         parser: {
@@ -61,6 +61,26 @@ module.exports = {
         generator: {
           filename: 'static/images/[name].[contenthash:8][ext]', // 加上[contenthash:8]
         },
+      },
+      {
+        test: /.svg$/, // 对svg特殊处理
+        type: 'asset', // type选择asset
+        resourceQuery: /url/, // 针对路径 /a/b/c.svg?url
+        include: [path.resolve(__dirname, '../src')], // 只对项目src文件的ts,tsx进行loader解析
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024, // 小于10kb转base64位
+          },
+        },
+        generator: {
+          filename: 'static/images/[name].[contenthash:8][ext]', // 加上[contenthash:8]
+        },
+      },
+      {
+        // 除了上面的匹配规则，我们都按照React组件来使用
+        test: /\.svg$/,
+        resourceQuery: { not: [/url/] },
+        use: ['@svgr/webpack'], // 作为组件引入 import Icon from 'xxx.svg'  <Icon />
       },
       {
         test: /.(woff2?|eot|ttf|otf)$/, // 匹配字体图标文件

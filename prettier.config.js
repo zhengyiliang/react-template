@@ -1,4 +1,9 @@
 module.exports = {
+  pluginSearchDirs: false,
+  plugins: [
+    require.resolve('prettier-plugin-organize-imports'),
+    require.resolve('prettier-plugin-packagejson'),
+  ],
   printWidth: 100, // 指定代码长度，超出换行-
   tabWidth: 2, // tab 键的宽度
   useTabs: false, // 不使用tab

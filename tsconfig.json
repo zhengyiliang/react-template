@@ -10,7 +10,7 @@
     "target": "es2015" /* 输出代码 ES 版本，可以是: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ES2021', or 'ESNEXT'. */,
     "module": "commonjs" /* 指定模块生成方式: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
     "allowJs": true /* 编译时，允许有 js 文件 */,
-    "jsx": "react" /* jsx 的编译方式: 'preserve', 'react-native', 'react', 'react-jsx' or 'react-jsxdev'. */,
+    "jsx": "react-jsx" /* react-jsx，tsx文件不用单独引入react就能使用 jsx 的编译方式: 'preserve', 'react-native', 'react', 'react-jsx' or 'react-jsxdev'. */,
     "sourceMap": true /* 生成对应的 map 文件 */,
     "outDir": "./dist/" /* 定义输出文件的文件夹 */,
     "removeComments": true /* 去除注释 */,

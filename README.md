@@ -91,3 +91,23 @@
 ## pretty-quick/lint-staged
 
 `pretty-quick` 会只格式化 `git add .` 暂存之后的文件
+
+
+##  prettier-plugin-organize-imports
+
+删除引入但未使用的变量，优化 import 代码
+
+## prettier-plugin-packagejson
+格式化json文件
+
+
+## 组件不用单独引入React
+
+- tsconfig.json  => "jsx": "react-jsx"
+- .eslintrc => "react/react-in-jsx-scope": 0  关闭必须引入React的校验
+- babel.config.js => presets => [
+    '@babel/preset-react',
+    {
+      runtime: 'automatic', // 用处： 不引入React也能使用
+    },
+  ],
